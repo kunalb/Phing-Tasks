@@ -3,18 +3,9 @@
 require_once "phing/Task.php";
 
 /**
- * YUICompressorTask
+ * WPPoT Task
  * 
- * Compresses CSS and Javascript files before deployment.
- *
- * Example Usage:
- * <YUICompressor path="path/to/yuicompressor" mapping=".dev">
- * 	<fileset dir = ".">
- *	</fileset>
- * </YUICompressor>
- *
- * The mapping attribute is used in renaming the files as they are compressed.
- * In the given usage, '.dev' will be removed from all the file names on output.
+ * Used to generate the .pot file for a plugin.
  *
  */
 class WPPotTask extends Task {
